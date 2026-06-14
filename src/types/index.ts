@@ -29,4 +29,18 @@ export interface IIssue {
 }
 // Data coming into the service requires the body fields + the extracted reporter ID
 export type TIssuePayload = Omit<IIssue, "id" | "status" | "created_at" | "updated_at">
+// 1. Structure the allowed query parameters
+export type TGetIssuesQuery = {
+  sort?: "newest" | "oldest" | undefined; 
+  type?: IssueType | undefined;          
+  status?: IssueStatus | undefined;     
+};
+//  The final response format requested by the API spec
+export type TStitchedIssue = Omit<IIssue, "reporter_id"> & {
+    reporter:{
+        id: number,
+        name:string,
+        role:string
+    }
+}
 

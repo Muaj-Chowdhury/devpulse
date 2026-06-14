@@ -1,6 +1,6 @@
 import { Router } from "express";
 import { auth, authorizeRoles,  } from "../../middlewares/auth"; // Adjust to your auth path
-import { createIssue } from "./issue.controller";
+import { createIssue, getAllIssues } from "./issue.controller";
 
 const router = Router();
 
@@ -11,5 +11,5 @@ router.post(
   authorizeRoles("contributor", "maintainer"),
   createIssue
 );
-
+router.get("/", getAllIssues);
 export const issueRoutes = router;
