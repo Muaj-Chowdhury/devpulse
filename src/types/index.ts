@@ -43,4 +43,6 @@ export type TStitchedIssue = Omit<IIssue, "reporter_id"> & {
         role:string
     }
 }
+// The fields a user is allowed to modify during a PATCH request
+export type TUpdateIssuePayload = Partial<Pick<IIssue,"title"|"description"|"type">>
 
