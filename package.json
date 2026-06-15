@@ -3,12 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-"scripts": {
-  "start": "tsx ./dist/index.js",
-  "dev": "tsx watch ./src/index.ts",
-  "build": "tsup src/index.ts --format esm --clean",
-  "test": "echo \"Error: no test specified\" && exit 1"
-}
+  "scripts": {
+    "start": "tsx ./dist/index.js",
+    "dev": "tsx watch ./src/index.ts",
+    "build": "tsup src/index.ts --format esm --clean",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
