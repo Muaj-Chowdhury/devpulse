@@ -223,7 +223,7 @@ JWT_REFRESH_SECRET=your_super_secure_refresh_token_secret_key_456
 Create a PostgreSQL database named:
 
 ```sql
-issue_tracker_db
+devpulse
 ```
 
 Run the schema scripts to create the required tables.
