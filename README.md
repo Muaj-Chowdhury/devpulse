@@ -4,9 +4,7 @@ A production-grade, modular RESTful API built with **Node.js**, **Express**, **T
 
 ## 🌐 Live URL https://devpulse-three-ashy.vercel.app/
 
-**Production:** 
 
-> Replace the URL above with your actual deployed application URL if different.
 
 ---
 
